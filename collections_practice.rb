@@ -88,9 +88,9 @@ def sum_array(array)
 end
 
 def add_s(array)
-  result = []
+
   
-  array.each_with_index do |word, index|
+  array.each_with_index.collect do |word, index|
     if index == 1 
       result << word
     else
@@ -99,7 +99,7 @@ def add_s(array)
     end
   end
   
-  return result
+  
 end
 
 
