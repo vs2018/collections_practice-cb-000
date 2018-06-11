@@ -92,10 +92,10 @@ def add_s(array)
   
   array.collect.each_with_index do |word, index|
     if index == 1 
-      return word
+      word
     else
       new_word = word << "s"
-      return new_word
+      new_word
     end
   end
   
