@@ -94,8 +94,7 @@ def add_s(array)
     if index == 1 
       word
     else
-      new_word = word << "s"
-      new_word
+      word << "s"
     end
   end
   
