@@ -90,12 +90,11 @@ end
 def add_s(array)
 
   
-  array.each_with_index.collect do |word, index|
+  array.collect.each_with_index do |word, index|
     if index == 1 
-      result << word
+      word
     else
-      new_word = word << "s"
-      result << new_word
+      word << "s"
     end
   end
   
